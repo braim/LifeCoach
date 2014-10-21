@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>BraimsTimer</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.2.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.2.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.2.0/js/ui.js"></script>
+    <script src="/LiveSDKHTML/js/wl.js"></script>
+
+    <!-- BraimsTimer references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/sample-utils/sample-utils.css" />
+
+    <!--<script src="/sample-utils/sample-utils.js"></script>-->
+    <script src="/js/ConfigManager.js"></script>
+    <script src="/js/DataManager.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+<body role="application">
+    <div id="formWrapper">
+
+        <div id="levelcontainer">
+            <div id="firstlevel">
+                First Level 
+                    <div>
+                        <button type="button" id="btnAddL1" class="btnAddLevel">&#xE1DA;</button>
+                        <input id="txtAddL1" type="text" class="txtAddLevel" />
+                        <button id="btnDelL1" type="button" class="btnDelLevel"  >&#xE106;</button>
+                    </div>
+                <div id="firstlevelC"></div>
+            </div>
+            <div id="secondlevel">
+                Second Level
+                   <div>
+                       <button id="btnAddL2" type="button"  class="btnAddLevel">&#xE1DA;</button>
+                       <input id="txtAddL2" type="text" class="txtAddLevel" />
+                       <button id="btnDelL2" type="button"  class="btnDelLevel">&#xE106;</button>
+                   </div>
+
+                <div id="secondlevelC"></div>
+            </div>
+        </div>
+         <div id="midsection">
+                <div id="start">
+            Started  <label id="lblStart" ></label>
+        </div>
+       
+        <div id="sofar">
+            <button type="submit" value="breaknow" id="btnBreaknow">Break </button>
+            <span class="spacer">Now</span>  <input type="text" id="lblSoFar" readonly="true" /> So Far
+        </div>
+        <div id="breakafter">
+            <button type="submit" value="breakfor" id="btnBreakfor">Break </button>
+            <span class="spacer">In</span> <input type="number" id="numBreakfor">
+            Mins From Start
+	
+			
+        </div>
+        <div id="breakat">
+            <button type="submit" value="breakat" id="btnBreakat">Break </button>
+            <span class="spacer">At</span>
+			<div data-win-control="WinJS.UI.TimePicker" id="dtBreakat">
+            </div>
+        </div>
+             </div>
+    </div>
+
+
+
+
+        <div id="contentHost"></div>
+
+
+    <button type="submit" value="Save to OneDrive" id="btnSaveWL">Save to OneDrive </button>
+
+    <label id="txtboxtext"></label>
+    <div data-win-control="WinJS.UI.AppBar">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'delete',label:'Clear Data',id:'btnClear', type:'button'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'mail',label:'Mail Data',id:'btnEmail', type:'button'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'settings',label:'Settings',id:'btnShowSettings', type:'button'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'save' , label:'Save Local', id:'btnSaveLocal', type:'button'}"></button>
+    </div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bin\Debug\resources.pri
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bin\Debug\AppxManifest.xml
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bin\Debug\BraimsTimer.build.appxrecipe
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bld\Debug\priconfig.xml.intermediate
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bld\Debug\layout.resfiles.intermediate
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bld\Debug\resources.resfiles.intermediate
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bld\Debug\pri.resfiles.intermediate
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bld\Debug\priconfig.xml
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bld\Debug\layout.resfiles
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bld\Debug\resources.resfiles
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bld\Debug\pri.resfiles
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bld\Debug\LanguageQualifiers.txt
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bld\Debug\ProjectArchitectures.txt
+C:\Users\John\Desktop\BraimsTimer\BraimsTimer\bin\Debug\AppData\config.txt
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bin\Debug\AppData\config.txt
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bin\Debug\resources.pri
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bin\Debug\AppxManifest.xml
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bin\Debug\BraimsTimer.build.appxrecipe
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\priconfig.xml
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\priconfig.xml.intermediate
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\layout.resfiles
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\layout.resfiles.intermediate
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\resources.resfiles
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\resources.resfiles.intermediate
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\pri.resfiles
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\pri.resfiles.intermediate
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\qualifiers.txt
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\qualifiers.txt.intermediate
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\John\Source\BraimsTimer\BraimsTimer\bld\Debug\ProjectArchitectures.txt
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bin\Debug\AppData\config.txt
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bin\Debug\ReverseMap\resources.pri
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bin\Debug\AppxManifest.xml
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bin\Debug\BraimsTimer.build.appxrecipe
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\priconfig.xml
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\priconfig.xml.intermediate
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\layout.resfiles
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\layout.resfiles.intermediate
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\resources.resfiles
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\resources.resfiles.intermediate
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\pri.resfiles
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\pri.resfiles.intermediate
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\qualifiers.txt
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\qualifiers.txt.intermediate
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\MultipleQualifiersPerDimensionFound.txt
+C:\Users\John\Source\BraimsTimer 8.1\BraimsTimer\bld\Debug\ProjectArchitectures.txt
