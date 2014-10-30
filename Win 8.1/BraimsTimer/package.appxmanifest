@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest" xmlns:m2="http://schemas.microsoft.com/appx/2013/manifest">
-  <Identity Name="2395Braim.BraimsTimer" Version="1.1.0.4" Publisher="CN=D9401695-664C-4396-A426-F191AE95292C" />
+  <Identity Name="2395Braim.BraimsTimer" Version="1.2.0.4" Publisher="CN=D9401695-664C-4396-A426-F191AE95292C" />
   <Properties>
     <DisplayName>Braim's Timer</DisplayName>
     <PublisherDisplayName>Braim</PublisherDisplayName>
@@ -14,8 +14,8 @@
     <Resource Language="x-generate" />
   </Resources>
   <Applications>
-    <Application Id="App" StartPage="default.html">
-      <m2:VisualElements DisplayName="Braim's Timer" Description="Braim's timer is a tool to help assign work hours to differnt projects or tasks. Time spans can be allocated to categories and subcategories. Data can be sent to an email address." BackgroundColor="#464646" ForegroundText="light" ToastCapable="false" Square150x150Logo="images\logo.png" Square30x30Logo="images\smalllogo.png">
+    <Application Id="App" StartPage="Default.html">
+      <m2:VisualElements DisplayName="Braim's Timer" Description="Braim's timer is a tool to help assign hours to differnt projects, tasks or objectives. Time spans can be allocated to categories and subcategories. Data can be sent to an email address, saved locally or sent to OneDrive. New features will be added based on user requests. Please email for any feature you like." BackgroundColor="#464646" ForegroundText="light" ToastCapable="false" Square150x150Logo="images\logo.png" Square30x30Logo="images\smalllogo.png">
         <m2:DefaultTile ShortName="Braim's Timer">
           <m2:ShowNameOnTiles>
             <m2:ShowOn Tile="square150x150Logo" />

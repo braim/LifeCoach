@@ -50,9 +50,10 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.1</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>BraimsTimer_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>BraimsTimer_TemporaryKey.pfx</PackageCertificateKeyFile>
     <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
-    <PackageCertificateThumbprint>8EAD6081A79BE1C44719B7C927D00127C9763C78</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>6CB41CD8A439C4412F26BE2A99462C50B9F7AE6F</PackageCertificateThumbprint>
+    <AppxBundlePlatforms>neutral</AppxBundlePlatforms>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
@@ -63,7 +64,7 @@
     </Content>
     <Content Include="AppData\JSONDataTemplate.txt" />
     <None Include="BraimsTimer_StoreKey.pfx" />
-    <Content Include="default.html" />
+    <Content Include="Default.html" />
     <Content Include="html\MainScenario.html" />
     <Content Include="html\SettingsFlyout.html" />
     <Content Include="images\logo.png" />
@@ -73,10 +74,11 @@
     <Content Include="js\MainScenario.js" />
     <Content Include="js\SettingsFlyout.js" />
     <Content Include="js\DataManager.js" />
-    <Content Include="js\default.js" />
+    <Content Include="js\Default.js" />
     <Content Include="css\default.css" />
     <Content Include="js\ConfigManager.js" />
     <None Include="Package.StoreAssociation.xml" />
+    <Content Include="js\SkyDrive.js" />
     <Content Include="sample-utils\footer.html" />
     <Content Include="sample-utils\header.html" />
     <Content Include="sample-utils\sample-utils.css" />

@@ -2,6 +2,21 @@
 // http://go.microsoft.com/fwlink/?LinkId=232509
 (function () {
     "use strict";
+    WinJS.Application.onerror = function (info) {
+        var err = {
+            errorMessage: info.detail.errorMessage,
+            errorUrl: info.detail.errorUrl,
+            errorLine: info.detail.errorLine,
+            errorCharacter: info.detail.errorCharacter,
+        };
+
+        Windows.Storage.ApplicationData.current.localFolder
+           .createFileAsync("crash.txt", Windows.Storage.CreationCollisionOption.openIfExists)
+           .then(function (file) {
+               Windows.Storage.FileIO.appendLinesAsync(file, [JSON.stringify(err)]);
+           });
+    };
+
     var sampleTitle = "Application Settings";
     var scenarios = [
     { url: "/html/MainScenario.html", title: "Default Screen" },
@@ -11,8 +26,10 @@
     ];
     var app = WinJS.Application;
     var activation = Windows.ApplicationModel.Activation;
+    /*
     var cnfgmgr = new ConfigManager();
     var datamgr = new DataManager();
+    */
     WinJS.Binding.optimizeBindingReferences = true;
 
     WinJS.Utilities.startLog({ type: "status", tags: "sample" });
@@ -25,7 +42,7 @@
     var page = WinJS.UI.Pages.define("default.html", {
         ready: function (element, options) {
 
-            
+            /*
             document.getElementById("btnEmail").addEventListener("click", doClickView, false);
             document.getElementById("btnBreakat").addEventListener("click", datamgr.Break, false);
             document.getElementById("btnBreakfor").addEventListener("click", datamgr.Break, false);
@@ -36,7 +53,8 @@
             document.getElementById("btnDelL2").addEventListener("click", cnfgmgr.Del, false);
             document.getElementById("btnSaveWL").addEventListener("click", datamgr.loginWL, false);
             document.getElementById("btnSaveLocal").addEventListener("click", datamgr.SaveFile , false);
-
+            document.querySelector("#btnClear").addEventListener("click", datamgr.Clear);
+            */
             WinJS.log && WinJS.log("To show the bar, swipe up from the bottom of the screen", "sample", "status");
 
             WinJS.Application.onsettings = function (e) {
@@ -47,7 +65,7 @@
                 //WinJS.UI.SettingsFlyout.showSettings("defaults", "/html/4-SettingsFlyout-Settings.html");
                 Windows.UI.ApplicationSettings.SettingsPane.show();
             });
-            document.querySelector("#btnClear").addEventListener("click", datamgr.Clear);
+          
 
         },
         unload: function () {
@@ -78,10 +96,13 @@
     app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
+
+                /*
                 cnfgmgr.LoadFromFile();
                 var dt_start = datamgr.GetStartTime();
                 document.getElementById("lblStart").innerText = dt_start.toString();
                 datamgr.StartTimer();
+                */
 
                 // TODO: This application has been newly launched. Initialize
                 // your application here.
@@ -89,6 +110,7 @@
                 // TODO: This application has been reactivated from suspension.
                 // Restore application state here.
             }
+            // Navigate to last Url
             args.setPromise(WinJS.UI.processAll().done(function () {
 
                 var url = WinJS.Application.sessionState.lastUrl || scenarios[0].url;
@@ -98,8 +120,11 @@
             );
         }
     };
-
+    app.ondeactivate = function(args) {
+        var a = 20;
+    }
     app.oncheckpoint = function (args) {
+        var a = 10;
         // TODO: This application is about to be suspended. Save any state
         // that needs to persist across suspensions here. You might use the
         // WinJS.Application.sessionState object, which is automatically
@@ -114,6 +139,7 @@
         // Call unload method on current scenario, if there is one
         host.winControl && host.winControl.unload && host.winControl.unload();
         WinJS.Utilities.empty(host);
+        // store last navigation to be used when app activated
         eventObject.detail.setPromise(WinJS.UI.Pages.render(url, host, eventObject.detail.state).then(function () {
             WinJS.Application.sessionState.lastUrl = url;
         }));

@@ -17,7 +17,7 @@
     <!--<script src="/sample-utils/sample-utils.js"></script>-->
     <script src="/js/ConfigManager.js"></script>
     <script src="/js/DataManager.js"></script>
-    <script src="/js/default.js"></script>
+    <script src="/js/Default.js"></script>
 </head>
 <body role="application">
     <div id="formWrapper">
@@ -67,14 +67,7 @@
         </div>
              </div>
     </div>
-
-
-
-
         <div id="contentHost"></div>
-
-
-    <button type="submit" value="Save to OneDrive" id="btnSaveWL">Save to OneDrive </button>
 
     <label id="txtboxtext"></label>
     <div data-win-control="WinJS.UI.AppBar">
@@ -82,6 +75,8 @@
         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'mail',label:'Mail Data',id:'btnEmail', type:'button'}"></button>
         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'settings',label:'Settings',id:'btnShowSettings', type:'button'}"></button>
         <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'save' , label:'Save Local', id:'btnSaveLocal', type:'button'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'uploadskydrive' , label:'Save to OneDrive', id:'btnSaveWL', type:'button'}"></button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{icon:'protecteddocument' , label:'Login to OneDrive', id:'btnLoginWL', type:'button'}"></button>
     </div>
 </body>
 </html>
